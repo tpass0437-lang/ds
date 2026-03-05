@@ -5,7 +5,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("YOUR_FILE_PATH/YOUR_FILE.csv")  
+df = pd.read_csv("C:\dataset\iris-write-from-docker.csv")  
 # 🔴 CHANGE FILE PATH
 
 X = df.select_dtypes(include='number')
