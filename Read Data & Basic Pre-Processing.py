@@ -5,10 +5,28 @@ import numpy as np
 df = pd.read_csv("C:/dataset/iris-write-from-docker.csv")  
 # 🔴 CHANGE FILE PATH to your dataset location
 
+print("First 5 rows")
 print(df.head())
+
+print("Last 5 rows")
+print(df.tail())
+
+print("Dataset Information")
 print(df.info())
+
+print("Statistical Summary")
 print(df.describe())
 
+print("Shape of dataset (rows, columns)")
+print(df.shape)
+
+print("Column Names")
+print(df.columns)
+
+print("Data Types")
+print(df.dtypes)
+
+print("Missing Values")
 print(df.isnull().sum())
 
 df = df.fillna(df.mean(numeric_only=True))  
@@ -43,3 +61,4 @@ grouped = df.groupby("class").mean(numeric_only=True)
 
 print("Grouped Data:")
 print(grouped)
+
