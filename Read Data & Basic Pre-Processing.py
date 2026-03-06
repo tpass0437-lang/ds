@@ -1,4 +1,5 @@
 #Read Data & Basic Pre-Processing
+#pip install pandas numpy matplotlib scikit-learn scipy
 import pandas as pd
 import numpy as np
 
@@ -61,4 +62,5 @@ grouped = df.groupby("class").mean(numeric_only=True)
 
 print("Grouped Data:")
 print(grouped)
+
 
